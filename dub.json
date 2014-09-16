@@ -1,0 +1,13 @@
+{
+	"name": "opencl",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2014, yusuke",
+	"authors": ["Yusuke Suzuki"],
+
+	"dependencies": {
+	},
+
+	"targetType" : "executable",
+	
+	"libs" : ["OpenCL"]
+}
