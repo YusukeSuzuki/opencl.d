@@ -29,7 +29,15 @@
 			"buildOptions" : ["unittests", "debugMode", "debugInfo"],
 			"sourcePaths" : ["source", "test"],
 			"importPaths" : ["source"],
-		}
+		},
+		{
+			"name" : "sample",
+			"targetType" : "executable",
+			"buildType" : "debug",
+			"buildOptions" : ["debugMode", "debugInfo"],
+			"sourcePaths" : ["source", "sample"],
+			"importPaths" : ["source"],
+		},
 	],
 
 	"targetPath" : "target"
