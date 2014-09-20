@@ -6,8 +6,32 @@
 
 	"dependencies": {
 	},
-
-	"targetType" : "executable",
 	
-	"libs" : ["OpenCL"]
+	"libs" : ["OpenCL"],
+	
+	"configurations" : [
+		{
+			"name" : "debug",
+			"buildType" : "debug",
+			"targetType" : "library",
+			"sourcePaths" : ["source"],
+		},
+		{
+			"name" : "release",
+			"buildType" : "release",
+			"targetType" : "library",
+			"sourcePaths" : ["source"],
+		},
+		{
+			"name" : "test",
+			"targetType" : "executable",
+			"buildType" : "debug",
+			"buildOptions" : ["unittests", "debugMode", "debugInfo"],
+			"sourcePaths" : ["source", "test"],
+			"importPaths" : ["source"],
+		}
+	],
+
+	"targetPath" : "target"
 }
+
