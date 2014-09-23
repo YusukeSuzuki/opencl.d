@@ -136,21 +136,21 @@ const int CL_VERSION_1_1 = 1;
 const int CL_FALSE = 0;
 const int CL_TRUE = 1;
 
-/* cl_platform_info */
+// cl_platform_info
 const uint CL_PLATFORM_PROFILE = 0x0900;
 const uint CL_PLATFORM_VERSION = 0x0901;
 const uint CL_PLATFORM_NAME = 0x0902;
 const uint CL_PLATFORM_VENDOR = 0x0903;
 const uint CL_PLATFORM_EXTENSIONS = 0x0904;
 
-/* cl_device_type - bitfield */
+// cl_device_type - bitfield
 const uint CL_DEVICE_TYPE_DEFAULT = (1 << 0);
 const uint CL_DEVICE_TYPE_CPU = (1 << 1);
 const uint CL_DEVICE_TYPE_GPU = (1 << 2);
 const uint CL_DEVICE_TYPE_ACCELERATOR = (1 << 3);
 const uint CL_DEVICE_TYPE_ALL = 0xFFFFFFFF;
 
-/* cl_device_info */
+// cl_device_info
 const uint CL_DEVICE_TYPE = 0x1000;
 const uint CL_DEVICE_VENDOR_ID = 0x1001;
 const uint CL_DEVICE_MAX_COMPUTE_UNITS = 0x1002;
@@ -201,8 +201,8 @@ const uint CL_DEVICE_PROFILE = 0x102E;
 const uint CL_DEVICE_VERSION = 0x102F;
 const uint CL_DEVICE_EXTENSIONS = 0x1030;
 const uint CL_DEVICE_PLATFORM = 0x1031;
-/* 0x1032 reserved for CL_DEVICE_DOUBLE_FP_CONFIG */
-/* 0x1033 reserved for CL_DEVICE_HALF_FP_CONFIG */
+// 0x1032 reserved for CL_DEVICE_DOUBLE_FP_CONFIG
+// 0x1033 reserved for CL_DEVICE_HALF_FP_CONFIG
 const uint CL_DEVICE_PREFERRED_VECTOR_WIDTH_HALF = 0x1034;
 const uint CL_DEVICE_HOST_UNIFIED_MEMORY = 0x1035;
 const uint CL_DEVICE_NATIVE_VECTOR_WIDTH_CHAR = 0x1036;
@@ -214,7 +214,7 @@ const uint CL_DEVICE_NATIVE_VECTOR_WIDTH_DOUBLE = 0x103B;
 const uint CL_DEVICE_NATIVE_VECTOR_WIDTH_HALF = 0x103C;
 const uint CL_DEVICE_OPENCL_C_VERSION = 0x103D;
 
-/* cl_device_fp_config - bitfield */
+// cl_device_fp_config - bitfield
 const uint CL_FP_DENORM = (1 << 0);
 const uint CL_FP_INF_NAN = (1 << 1);
 const uint CL_FP_ROUND_TO_NEAREST = (1 << 2);
@@ -223,39 +223,39 @@ const uint CL_FP_ROUND_TO_INF = (1 << 4);
 const uint CL_FP_FMA = (1 << 5);
 const uint CL_FP_SOFT_FLOAT = (1 << 6);
 
-/* cl_device_mem_cache_type */
+// cl_device_mem_cache_type
 const uint CL_NONE = 0x0;
 const uint CL_READ_ONLY_CACHE = 0x1;
 const uint CL_READ_WRITE_CACHE = 0x2;
 
-/* cl_device_local_mem_type */
+// cl_device_local_mem_type
 const uint CL_LOCAL = 0x1;
 const uint CL_GLOBAL = 0x2;
 
-/* cl_device_exec_capabilities - bitfield */
+// cl_device_exec_capabilities - bitfield
 const uint CL_EXEC_KERNEL = (1 << 0);
 const uint CL_EXEC_NATIVE_KERNEL = (1 << 1);
 
-/* cl_command_queue_properties - bitfield */
+// cl_command_queue_properties - bitfield
 const uint CL_QUEUE_OUT_OF_ORDER_EXEC_MODE_ENABLE = (1 << 0);
 const uint CL_QUEUE_PROFILING_ENABLE = (1 << 1);
 
-/* cl_context_info */
+// cl_context_info
 const uint CL_CONTEXT_REFERENCE_COUNT = 0x1080;
 const uint CL_CONTEXT_DEVICES = 0x1081;
 const uint CL_CONTEXT_PROPERTIES = 0x1082;
 const uint CL_CONTEXT_NUM_DEVICES = 0x1083;
 
-/* cl_context_info + cl_context_properties */
+// cl_context_info + cl_context_properties
 const uint CL_CONTEXT_PLATFORM = 0x1084;
 
-/* cl_command_queue_info */
+// cl_command_queue_info
 const uint CL_QUEUE_CONTEXT = 0x1090;
 const uint CL_QUEUE_DEVICE = 0x1091;
 const uint CL_QUEUE_REFERENCE_COUNT = 0x1092;
 const uint CL_QUEUE_PROPERTIES = 0x1093;
 
-/* cl_mem_flags - bitfield */
+// cl_mem_flags - bitfield
 const uint CL_MEM_READ_WRITE = (1 << 0);
 const uint CL_MEM_WRITE_ONLY = (1 << 1);
 const uint CL_MEM_READ_ONLY = (1 << 2);
@@ -263,7 +263,7 @@ const uint CL_MEM_USE_HOST_PTR = (1 << 3);
 const uint CL_MEM_ALLOC_HOST_PTR = (1 << 4);
 const uint CL_MEM_COPY_HOST_PTR = (1 << 5);
 
-/* cl_channel_order */
+// cl_channel_order
 const uint CL_R = 0x10B0;
 const uint CL_A = 0x10B1;
 const uint CL_RG = 0x10B2;
@@ -278,7 +278,7 @@ const uint CL_Rx = 0x10BA;
 const uint CL_RGx = 0x10BB;
 const uint CL_RGBx = 0x10BC;
 
-/* cl_channel_type */
+// cl_channel_type
 const uint CL_SNORM_INT8 = 0x10D0;
 const uint CL_SNORM_INT16 = 0x10D1;
 const uint CL_UNORM_INT8 = 0x10D2;
@@ -295,12 +295,12 @@ const uint CL_UNSIGNED_INT32 = 0x10DC;
 const uint CL_HALF_FLOAT = 0x10DD;
 const uint CL_FLOAT = 0x10DE;
 
-/* cl_mem_object_type */
+// cl_mem_object_type
 const uint CL_MEM_OBJECT_BUFFER = 0x10F0;
 const uint CL_MEM_OBJECT_IMAGE2D = 0x10F1;
 const uint CL_MEM_OBJECT_IMAGE3D = 0x10F2;
 
-/* cl_mem_info */
+// cl_mem_info
 const uint CL_MEM_TYPE = 0x1100;
 const uint CL_MEM_FLAGS = 0x1101;
 const uint CL_MEM_SIZE = 0x1102;
@@ -311,7 +311,7 @@ const uint CL_MEM_CONTEXT = 0x1106;
 const uint CL_MEM_ASSOCIATED_MEMOBJECT = 0x1107;
 const uint CL_MEM_OFFSET = 0x1108;
 
-/* cl_image_info */
+// cl_image_info
 const uint CL_IMAGE_FORMAT = 0x1110;
 const uint CL_IMAGE_ELEMENT_SIZE = 0x1111;
 const uint CL_IMAGE_ROW_PITCH = 0x1112;
@@ -320,29 +320,29 @@ const uint CL_IMAGE_WIDTH = 0x1114;
 const uint CL_IMAGE_HEIGHT = 0x1115;
 const uint CL_IMAGE_DEPTH = 0x1116;
 
-/* cl_addressing_mode */
+// cl_addressing_mode
 const uint CL_ADDRESS_NONE = 0x1130;
 const uint CL_ADDRESS_CLAMP_TO_EDGE = 0x1131;
 const uint CL_ADDRESS_CLAMP = 0x1132;
 const uint CL_ADDRESS_REPEAT = 0x1133;
 const uint CL_ADDRESS_MIRRORED_REPEAT = 0x1134;
 
-/* cl_filter_mode */
+// cl_filter_mode
 const uint CL_FILTER_NEAREST = 0x1140;
 const uint CL_FILTER_LINEAR = 0x1141;
 
-/* cl_sampler_info */
+// cl_sampler_info
 const uint CL_SAMPLER_REFERENCE_COUNT = 0x1150;
 const uint CL_SAMPLER_CONTEXT = 0x1151;
 const uint CL_SAMPLER_NORMALIZED_COORDS = 0x1152;
 const uint CL_SAMPLER_ADDRESSING_MODE = 0x1153;
 const uint CL_SAMPLER_FILTER_MODE = 0x1154;
 
-/* cl_map_flags - bitfield */
+// cl_map_flags - bitfield
 const uint CL_MAP_READ = (1 << 0);
 const uint CL_MAP_WRITE = (1 << 1);
 
-/* cl_program_info */
+// cl_program_info
 const uint CL_PROGRAM_REFERENCE_COUNT = 0x1160;
 const uint CL_PROGRAM_CONTEXT = 0x1161;
 const uint CL_PROGRAM_NUM_DEVICES = 0x1162;
@@ -351,39 +351,39 @@ const uint CL_PROGRAM_SOURCE = 0x1164;
 const uint CL_PROGRAM_BINARY_SIZES = 0x1165;
 const uint CL_PROGRAM_BINARIES = 0x1166;
 
-/* cl_program_build_info */
+// cl_program_build_info
 const uint CL_PROGRAM_BUILD_STATUS = 0x1181;
 const uint CL_PROGRAM_BUILD_OPTIONS = 0x1182;
 const uint CL_PROGRAM_BUILD_LOG = 0x1183;
 
-/* cl_build_status */
+// cl_build_status
 const uint CL_BUILD_SUCCESS = 0;
 const uint CL_BUILD_NONE = -1;
 const uint CL_BUILD_ERROR = -2;
 const uint CL_BUILD_IN_PROGRESS = -3;
 
-/* cl_kernel_info */
+// cl_kernel_info
 const uint CL_KERNEL_FUNCTION_NAME = 0x1190;
 const uint CL_KERNEL_NUM_ARGS = 0x1191;
 const uint CL_KERNEL_REFERENCE_COUNT = 0x1192;
 const uint CL_KERNEL_CONTEXT = 0x1193;
 const uint CL_KERNEL_PROGRAM = 0x1194;
 
-/* cl_kernel_work_group_info */
+// cl_kernel_work_group_info
 const uint CL_KERNEL_WORK_GROUP_SIZE = 0x11B0;
 const uint CL_KERNEL_COMPILE_WORK_GROUP_SIZE = 0x11B1;
 const uint CL_KERNEL_LOCAL_MEM_SIZE = 0x11B2;
 const uint CL_KERNEL_PREFERRED_WORK_GROUP_SIZE_MULTIPLE = 0x11B3;
 const uint CL_KERNEL_PRIVATE_MEM_SIZE = 0x11B4;
 
-/* cl_event_info */
+// cl_event_info
 const uint CL_EVENT_COMMAND_QUEUE = 0x11D0;
 const uint CL_EVENT_COMMAND_TYPE = 0x11D1;
 const uint CL_EVENT_REFERENCE_COUNT = 0x11D2;
 const uint CL_EVENT_COMMAND_EXECUTION_STATUS = 0x11D3;
 const uint CL_EVENT_CONTEXT = 0x11D4;
 
-/* cl_command_type */
+// cl_command_type
 const uint CL_COMMAND_NDRANGE_KERNEL = 0x11F0;
 const uint CL_COMMAND_TASK = 0x11F1;
 const uint CL_COMMAND_NATIVE_KERNEL = 0x11F2;
@@ -406,16 +406,16 @@ const uint CL_COMMAND_WRITE_BUFFER_RECT = 0x1202;
 const uint CL_COMMAND_COPY_BUFFER_RECT = 0x1203;
 const uint CL_COMMAND_USER = 0x1204;
 
-/* command execution status */
+// command execution status
 const uint CL_COMPLETE = 0x0;
 const uint CL_RUNNING = 0x1;
 const uint CL_SUBMITTED = 0x2;
 const uint CL_QUEUED = 0x3;
 
-/* cl_buffer_create_type = */
+// cl_buffer_create_type
 const uint CL_BUFFER_CREATE_TYPE_REGION = 0x1220;
 
-/* cl_profiling_info = */
+// cl_profiling_info
 const uint CL_PROFILING_COMMAND_QUEUED = 0x1280;
 const uint CL_PROFILING_COMMAND_SUBMIT = 0x1281;
 const uint CL_PROFILING_COMMAND_START = 0x1282;
@@ -424,553 +424,275 @@ const uint CL_PROFILING_COMMAND_END = 0x1283;
 extern (C)
 {
 
-/* Platform API */
+// Platform API
 cl_int
-clGetPlatformIDs(cl_uint          /* num_entries */,
-                 cl_platform_id * /* platforms */,
-                 cl_uint *        /* num_platforms */);
+clGetPlatformIDs(cl_uint, cl_platform_id *, cl_uint *);
 
 cl_int 
-clGetPlatformInfo(cl_platform_id   /* platform */, 
-                  cl_platform_info /* param_name */,
-                  size_t           /* param_value_size */, 
-                  void *           /* param_value */,
-                  size_t *         /* param_value_size_ret */);
+clGetPlatformInfo(cl_platform_id, cl_platform_info, size_t, void *, size_t *);
 
-/* Device APIs */
+// Device APIs 
 cl_int
-clGetDeviceIDs(cl_platform_id   /* platform */,
-               cl_device_type   /* device_type */, 
-               cl_uint          /* num_entries */, 
-               cl_device_id *   /* devices */, 
-               cl_uint *        /* num_devices */);
+clGetDeviceIDs(cl_platform_id, cl_device_type, cl_uint, cl_device_id *, cl_uint *);
 
 cl_int
-clGetDeviceInfo(cl_device_id    /* device */,
-                cl_device_info  /* param_name */, 
-                size_t          /* param_value_size */, 
-                void *          /* param_value */,
-                size_t *        /* param_value_size_ret */);
+clGetDeviceInfo(cl_device_id, cl_device_info, size_t, void *, size_t *);
 
-/* Context APIs  */
+// Context APIs 
 cl_context
-clCreateContext(const cl_context_properties * /* properties */,
-                cl_uint                       /* num_devices */,
-                const cl_device_id *          /* devices */,
-                void function(const char *, const void *, size_t, void *) /* pfn_notify */,
-                void *                        /* user_data */,
-                cl_int *                      /* errcode_ret */);
+clCreateContext(const cl_context_properties *, cl_uint, const cl_device_id *,
+	void function(const char *, const void *, size_t, void *), void *, cl_int *);
 
 cl_context
-clCreateContextFromType(const cl_context_properties * /* properties */,
-                        cl_device_type                /* device_type */,
-                        void function(const char *, const void *, size_t, void *) /* pfn_notify*/,
-                        void *                        /* user_data */,
-                        cl_int *                      /* errcode_ret */);
+clCreateContextFromType(const cl_context_properties *, cl_device_type,
+	void function(const char *, const void *, size_t, void *), void *, cl_int *);
 
 cl_int
-clRetainContext(cl_context /* context */);
+clRetainContext(cl_context);
 
 cl_int
-clReleaseContext(cl_context /* context */);
+clReleaseContext(cl_context);
 
 cl_int
-clGetContextInfo(cl_context         /* context */, 
-                 cl_context_info    /* param_name */, 
-                 size_t             /* param_value_size */, 
-                 void *             /* param_value */, 
-                 size_t *           /* param_value_size_ret */);
+clGetContextInfo(cl_context, cl_context_info, size_t, void *, size_t *);
 
-/* Command Queue APIs */
+// Command Queue APIs
 cl_command_queue
-clCreateCommandQueue(cl_context                     /* context */, 
-                     cl_device_id                   /* device */, 
-                     cl_command_queue_properties    /* properties */,
-                     cl_int *                       /* errcode_ret */);
+clCreateCommandQueue(cl_context, cl_device_id, cl_command_queue_properties, cl_int *);
 
 cl_int
-clRetainCommandQueue(cl_command_queue /* command_queue */);
+clRetainCommandQueue(cl_command_queue);
 
 cl_int
-clReleaseCommandQueue(cl_command_queue /* command_queue */);
+clReleaseCommandQueue(cl_command_queue);
 
 cl_int
-clGetCommandQueueInfo(cl_command_queue      /* command_queue */,
-                      cl_command_queue_info /* param_name */,
-                      size_t                /* param_value_size */,
-                      void *                /* param_value */,
-                      size_t *              /* param_value_size_ret */);
+clGetCommandQueueInfo(cl_command_queue, cl_command_queue_info, size_t, void *, size_t *);
 
 deprecated
 {
-/* 
- *  WARNING:
- *     This API introduces mutable state into the OpenCL implementation. It has been REMOVED
- *  to better facilitate thread safety.  The 1.0 API is not thread safe. It is not tested by the
- *  OpenCL 1.1 conformance test, and consequently may not work or may not work dependably.
- *  It is likely to be non-performant. Use of this API is not advised. Use at your own risk.
- *
- *  Software developers previously relying on this API are instructed to set the command queue 
- *  properties when creating the queue, instead. 
- */
 cl_int
-clSetCommandQueueProperty(cl_command_queue              /* command_queue */,
-                          cl_command_queue_properties   /* properties */, 
-                          cl_bool                        /* enable */,
-                          cl_command_queue_properties * /* old_properties */);
+clSetCommandQueueProperty(cl_command_queue, cl_command_queue_properties, cl_bool,
+	cl_command_queue_properties *);
 }
 
-/* Memory Object APIs */
+// Memory Object APIs
 cl_mem
-clCreateBuffer(cl_context   /* context */,
-               cl_mem_flags /* flags */,
-               size_t       /* size */,
-               void *       /* host_ptr */,
-               cl_int *     /* errcode_ret */);
+clCreateBuffer(cl_context, cl_mem_flags, size_t, void *, cl_int *);
 
 cl_mem
-clCreateSubBuffer(cl_mem                   /* buffer */,
-                  cl_mem_flags             /* flags */,
-                  cl_buffer_create_type    /* buffer_create_type */,
-                  const void *             /* buffer_create_info */,
-                  cl_int *                 /* errcode_ret */);
+clCreateSubBuffer(cl_mem, cl_mem_flags, cl_buffer_create_type, const void *,
+	cl_int *);
 
 cl_mem
-clCreateImage2D(cl_context              /* context */,
-                cl_mem_flags            /* flags */,
-                const cl_image_format * /* image_format */,
-                size_t                  /* image_width */,
-                size_t                  /* image_height */,
-                size_t                  /* image_row_pitch */, 
-                void *                  /* host_ptr */,
-                cl_int *                /* errcode_ret */);
-                        
+clCreateImage2D(cl_context, cl_mem_flags, const cl_image_format *, size_t, size_t,
+	size_t, void *, cl_int *);
+
 cl_mem
-clCreateImage3D(cl_context              /* context */,
-                cl_mem_flags            /* flags */,
-                const cl_image_format * /* image_format */,
-                size_t                  /* image_width */, 
-                size_t                  /* image_height */,
-                size_t                  /* image_depth */, 
-                size_t                  /* image_row_pitch */, 
-                size_t                  /* image_slice_pitch */, 
-                void *                  /* host_ptr */,
-                cl_int *                /* errcode_ret */);
-                        
-cl_int
-clRetainMemObject(cl_mem /* memobj */);
+clCreateImage3D(cl_context, cl_mem_flags, const cl_image_format *, size_t, size_t,
+	size_t, size_t, size_t, void *, cl_int *);
 
 cl_int
-clReleaseMemObject(cl_mem /* memobj */);
+clRetainMemObject(cl_mem);
 
 cl_int
-clGetSupportedImageFormats(cl_context           /* context */,
-                           cl_mem_flags         /* flags */,
-                           cl_mem_object_type   /* image_type */,
-                           cl_uint              /* num_entries */,
-                           cl_image_format *    /* image_formats */,
-                           cl_uint *            /* num_image_formats */);
-                                    
-cl_int
-clGetMemObjectInfo(cl_mem           /* memobj */,
-                   cl_mem_info      /* param_name */, 
-                   size_t           /* param_value_size */,
-                   void *           /* param_value */,
-                   size_t *         /* param_value_size_ret */);
+clReleaseMemObject(cl_mem);
 
 cl_int
-clGetImageInfo(cl_mem           /* image */,
-               cl_image_info    /* param_name */, 
-               size_t           /* param_value_size */,
-               void *           /* param_value */,
-               size_t *         /* param_value_size_ret */);
+clGetSupportedImageFormats(cl_context, cl_mem_flags, cl_mem_object_type, cl_uint,
+	cl_image_format *, cl_uint *);
 
 cl_int
-clSetMemObjectDestructorCallback(  cl_mem /* memobj */, 
-                                    void function( cl_mem /* memobj */, void* /*user_data*/), /*pfn_notify*/ 
-                                    void * /*user_data */ );  
+clGetMemObjectInfo(cl_mem, cl_mem_info, size_t, void *, size_t *);
 
-/* Sampler APIs  */
+cl_int
+clGetImageInfo(cl_mem, cl_image_info, size_t, void *, size_t *);
+
+cl_int
+clSetMemObjectDestructorCallback(  cl_mem, void function( cl_mem, void*), void *);  
+
+// Sampler APIs 
 cl_sampler
-clCreateSampler(cl_context          /* context */,
-                cl_bool             /* normalized_coords */, 
-                cl_addressing_mode  /* addressing_mode */, 
-                cl_filter_mode      /* filter_mode */,
-                cl_int *            /* errcode_ret */);
+clCreateSampler(cl_context, cl_bool, cl_addressing_mode, cl_filter_mode, cl_int *);
 
 cl_int
-clRetainSampler(cl_sampler /* sampler */);
+clRetainSampler(cl_sampler);
 
 cl_int
-clReleaseSampler(cl_sampler /* sampler */);
+clReleaseSampler(cl_sampler);
 
 cl_int
-clGetSamplerInfo(cl_sampler         /* sampler */,
-                 cl_sampler_info    /* param_name */,
-                 size_t             /* param_value_size */,
-                 void *             /* param_value */,
-                 size_t *           /* param_value_size_ret */);
-                            
-/* Program Object APIs  */
+clGetSamplerInfo(cl_sampler, cl_sampler_info, size_t, void *, size_t *);
+
+// Program Object APIs 
 cl_program
-clCreateProgramWithSource(cl_context        /* context */,
-                          cl_uint           /* count */,
-                          const char **     /* strings */,
-                          const size_t *    /* lengths */,
-                          cl_int *          /* errcode_ret */);
+clCreateProgramWithSource(cl_context, cl_uint, const char **, const size_t *,
+	cl_int *);
 
 cl_program
-clCreateProgramWithBinary(cl_context                     /* context */,
-                          cl_uint                        /* num_devices */,
-                          const cl_device_id *           /* device_list */,
-                          const size_t *                 /* lengths */,
-                          const ubyte **         /* binaries */,
-                          cl_int *                       /* binary_status */,
-                          cl_int *                       /* errcode_ret */);
+clCreateProgramWithBinary(cl_context, cl_uint, const cl_device_id *, const size_t *,
+	const ubyte **, cl_int *, cl_int *);
 
 cl_int
-clRetainProgram(cl_program /* program */);
+clRetainProgram(cl_program);
 
 cl_int
-clReleaseProgram(cl_program /* program */);
+clReleaseProgram(cl_program);
 
 cl_int
-clBuildProgram(cl_program           /* program */,
-               cl_uint              /* num_devices */,
-               const cl_device_id * /* device_list */,
-               const char *         /* options */, 
-               void function(cl_program /* program */, void * /* user_data */) /* pfn_notify */,
-               void *               /* user_data */);
+clBuildProgram(cl_program, cl_uint, const cl_device_id *, const char *,
+	void function(cl_program, void *), void *);
 
 cl_int
 clUnloadCompiler();
 
 cl_int
-clGetProgramInfo(cl_program         /* program */,
-                 cl_program_info    /* param_name */,
-                 size_t             /* param_value_size */,
-                 void *             /* param_value */,
-                 size_t *           /* param_value_size_ret */);
+clGetProgramInfo(cl_program, cl_program_info, size_t, void *, size_t *);
 
 cl_int
-clGetProgramBuildInfo(cl_program            /* program */,
-                      cl_device_id          /* device */,
-                      cl_program_build_info /* param_name */,
-                      size_t                /* param_value_size */,
-                      void *                /* param_value */,
-                      size_t *              /* param_value_size_ret */);
-                            
-/* Kernel Object APIs */
+clGetProgramBuildInfo(cl_program, cl_device_id, cl_program_build_info, size_t,
+	void *, size_t *);
+
+// Kernel Object APIs
 cl_kernel
-clCreateKernel(cl_program      /* program */,
-               const char *    /* kernel_name */,
-               cl_int *        /* errcode_ret */);
+clCreateKernel(cl_program, const char *, cl_int *);
 
 cl_int
-clCreateKernelsInProgram(cl_program     /* program */,
-                         cl_uint        /* num_kernels */,
-                         cl_kernel *    /* kernels */,
-                         cl_uint *      /* num_kernels_ret */);
+clCreateKernelsInProgram(cl_program, cl_uint, cl_kernel *, cl_uint *);
 
 cl_int
-clRetainKernel(cl_kernel    /* kernel */);
+clRetainKernel(cl_kernel);
 
 cl_int
-clReleaseKernel(cl_kernel   /* kernel */);
+clReleaseKernel(cl_kernel);
 
 cl_int
-clSetKernelArg(cl_kernel    /* kernel */,
-               cl_uint      /* arg_index */,
-               size_t       /* arg_size */,
-               const void * /* arg_value */);
+clSetKernelArg(cl_kernel, cl_uint, size_t, const void *);
 
 cl_int
-clGetKernelInfo(cl_kernel       /* kernel */,
-                cl_kernel_info  /* param_name */,
-                size_t          /* param_value_size */,
-                void *          /* param_value */,
-                size_t *        /* param_value_size_ret */);
+clGetKernelInfo(cl_kernel, cl_kernel_info, size_t, void *, size_t *);
 
 cl_int
-clGetKernelWorkGroupInfo(cl_kernel                  /* kernel */,
-                         cl_device_id               /* device */,
-                         cl_kernel_work_group_info  /* param_name */,
-                         size_t                     /* param_value_size */,
-                         void *                     /* param_value */,
-                         size_t *                   /* param_value_size_ret */);
+clGetKernelWorkGroupInfo(cl_kernel, cl_device_id, cl_kernel_work_group_info,
+	size_t, void *, size_t *);
 
-/* Event Object APIs  */
+// Event Object APIs 
 cl_int
-clWaitForEvents(cl_uint             /* num_events */,
-                const cl_event *    /* event_list */);
+clWaitForEvents(cl_uint, const cl_event *);
 
 cl_int
-clGetEventInfo(cl_event         /* event */,
-               cl_event_info    /* param_name */,
-               size_t           /* param_value_size */,
-               void *           /* param_value */,
-               size_t *         /* param_value_size_ret */);
-                            
+clGetEventInfo(cl_event, cl_event_info, size_t, void *, size_t *);
+
 cl_event
-clCreateUserEvent(cl_context    /* context */,
-                  cl_int *      /* errcode_ret */);               
-                            
-cl_int
-clRetainEvent(cl_event /* event */);
+clCreateUserEvent(cl_context, cl_int *);               
 
 cl_int
-clReleaseEvent(cl_event /* event */);
+clRetainEvent(cl_event);
 
 cl_int
-clSetUserEventStatus(cl_event   /* event */,
-                     cl_int     /* execution_status */);
-                     
-cl_int
-clSetEventCallback( cl_event    /* event */,
-                    cl_int      /* command_exec_callback_type */,
-                    void function(cl_event, cl_int, void *) /* pfn_notify */,
-                    void *      /* user_data */);
-
-/* Profiling APIs  */
-cl_int
-clGetEventProfilingInfo(cl_event            /* event */,
-                        cl_profiling_info   /* param_name */,
-                        size_t              /* param_value_size */,
-                        void *              /* param_value */,
-                        size_t *            /* param_value_size_ret */);
-                                
-/* Flush and Finish APIs */
-cl_int
-clFlush(cl_command_queue /* command_queue */);
+clReleaseEvent(cl_event);
 
 cl_int
-clFinish(cl_command_queue /* command_queue */);
-
-/* Enqueued Commands APIs */
-cl_int
-clEnqueueReadBuffer(cl_command_queue    /* command_queue */,
-                    cl_mem              /* buffer */,
-                    cl_bool             /* blocking_read */,
-                    size_t              /* offset */,
-                    size_t              /* cb */, 
-                    void *              /* ptr */,
-                    cl_uint             /* num_events_in_wait_list */,
-                    const cl_event *    /* event_wait_list */,
-                    cl_event *          /* event */);
-                            
-cl_int
-clEnqueueReadBufferRect(cl_command_queue    /* command_queue */,
-                        cl_mem              /* buffer */,
-                        cl_bool             /* blocking_read */,
-                        const size_t *      /* buffer_origin */,
-                        const size_t *      /* host_origin */, 
-                        const size_t *      /* region */,
-                        size_t              /* buffer_row_pitch */,
-                        size_t              /* buffer_slice_pitch */,
-                        size_t              /* host_row_pitch */,
-                        size_t              /* host_slice_pitch */,                        
-                        void *              /* ptr */,
-                        cl_uint             /* num_events_in_wait_list */,
-                        const cl_event *    /* event_wait_list */,
-                        cl_event *          /* event */);
-                            
-cl_int
-clEnqueueWriteBuffer(cl_command_queue   /* command_queue */, 
-                     cl_mem             /* buffer */, 
-                     cl_bool            /* blocking_write */, 
-                     size_t             /* offset */, 
-                     size_t             /* cb */, 
-                     const void *       /* ptr */, 
-                     cl_uint            /* num_events_in_wait_list */, 
-                     const cl_event *   /* event_wait_list */, 
-                     cl_event *         /* event */);
-                            
-cl_int
-clEnqueueWriteBufferRect(cl_command_queue    /* command_queue */,
-                         cl_mem              /* buffer */,
-                         cl_bool             /* blocking_write */,
-                         const size_t *      /* buffer_origin */,
-                         const size_t *      /* host_origin */, 
-                         const size_t *      /* region */,
-                         size_t              /* buffer_row_pitch */,
-                         size_t              /* buffer_slice_pitch */,
-                         size_t              /* host_row_pitch */,
-                         size_t              /* host_slice_pitch */,                        
-                         const void *        /* ptr */,
-                         cl_uint             /* num_events_in_wait_list */,
-                         const cl_event *    /* event_wait_list */,
-                         cl_event *          /* event */);
-                            
-cl_int
-clEnqueueCopyBuffer(cl_command_queue    /* command_queue */, 
-                    cl_mem              /* src_buffer */,
-                    cl_mem              /* dst_buffer */, 
-                    size_t              /* src_offset */,
-                    size_t              /* dst_offset */,
-                    size_t              /* cb */, 
-                    cl_uint             /* num_events_in_wait_list */,
-                    const cl_event *    /* event_wait_list */,
-                    cl_event *          /* event */);
-                            
-cl_int
-clEnqueueCopyBufferRect(cl_command_queue    /* command_queue */, 
-                        cl_mem              /* src_buffer */,
-                        cl_mem              /* dst_buffer */, 
-                        const size_t *      /* src_origin */,
-                        const size_t *      /* dst_origin */,
-                        const size_t *      /* region */, 
-                        size_t              /* src_row_pitch */,
-                        size_t              /* src_slice_pitch */,
-                        size_t              /* dst_row_pitch */,
-                        size_t              /* dst_slice_pitch */,
-                        cl_uint             /* num_events_in_wait_list */,
-                        const cl_event *    /* event_wait_list */,
-                        cl_event *          /* event */);
-                            
-cl_int
-clEnqueueReadImage(cl_command_queue     /* command_queue */,
-                   cl_mem               /* image */,
-                   cl_bool              /* blocking_read */, 
-                   const size_t *       /* origin[3] */,
-                   const size_t *       /* region[3] */,
-                   size_t               /* row_pitch */,
-                   size_t               /* slice_pitch */, 
-                   void *               /* ptr */,
-                   cl_uint              /* num_events_in_wait_list */,
-                   const cl_event *     /* event_wait_list */,
-                   cl_event *           /* event */);
+clSetUserEventStatus(cl_event, cl_int);
 
 cl_int
-clEnqueueWriteImage(cl_command_queue    /* command_queue */,
-                    cl_mem              /* image */,
-                    cl_bool             /* blocking_write */, 
-                    const size_t *      /* origin[3] */,
-                    const size_t *      /* region[3] */,
-                    size_t              /* input_row_pitch */,
-                    size_t              /* input_slice_pitch */, 
-                    const void *        /* ptr */,
-                    cl_uint             /* num_events_in_wait_list */,
-                    const cl_event *    /* event_wait_list */,
-                    cl_event *          /* event */);
+clSetEventCallback( cl_event, cl_int, void function(cl_event, cl_int, void *),
+	void *);
+
+// Profiling APIs 
+cl_int
+clGetEventProfilingInfo(cl_event, cl_profiling_info, size_t, void *, size_t *);
+
+// Flush and Finish APIs
+cl_int
+clFlush(cl_command_queue);
 
 cl_int
-clEnqueueCopyImage(cl_command_queue     /* command_queue */,
-                   cl_mem               /* src_image */,
-                   cl_mem               /* dst_image */, 
-                   const size_t *       /* src_origin[3] */,
-                   const size_t *       /* dst_origin[3] */,
-                   const size_t *       /* region[3] */, 
-                   cl_uint              /* num_events_in_wait_list */,
-                   const cl_event *     /* event_wait_list */,
-                   cl_event *           /* event */);
+clFinish(cl_command_queue);
+
+// Enqueued Commands APIs
+cl_int
+clEnqueueReadBuffer(cl_command_queue, cl_mem, cl_bool, size_t, size_t, void *,
+	cl_uint, const cl_event *, cl_event *);
 
 cl_int
-clEnqueueCopyImageToBuffer(cl_command_queue /* command_queue */,
-                           cl_mem           /* src_image */,
-                           cl_mem           /* dst_buffer */, 
-                           const size_t *   /* src_origin[3] */,
-                           const size_t *   /* region[3] */, 
-                           size_t           /* dst_offset */,
-                           cl_uint          /* num_events_in_wait_list */,
-                           const cl_event * /* event_wait_list */,
-                           cl_event *       /* event */);
+clEnqueueReadBufferRect(cl_command_queue, cl_mem, cl_bool, const size_t *,
+	const size_t *, const size_t *, size_t, size_t, size_t, size_t,
+	void *, cl_uint, const cl_event *, cl_event *);
 
 cl_int
-clEnqueueCopyBufferToImage(cl_command_queue /* command_queue */,
-                           cl_mem           /* src_buffer */,
-                           cl_mem           /* dst_image */, 
-                           size_t           /* src_offset */,
-                           const size_t *   /* dst_origin[3] */,
-                           const size_t *   /* region[3] */, 
-                           cl_uint          /* num_events_in_wait_list */,
-                           const cl_event * /* event_wait_list */,
-                           cl_event *       /* event */);
+clEnqueueWriteBuffer(cl_command_queue, cl_mem, cl_bool, size_t, size_t,
+	const void *, cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueWriteBufferRect(cl_command_queue, cl_mem, cl_bool, const size_t *,
+	const size_t *, const size_t *, size_t, size_t, size_t, size_t,
+	const void *, cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueCopyBuffer(cl_command_queue, cl_mem, cl_mem, size_t, size_t, size_t,
+	cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueCopyBufferRect(cl_command_queue, cl_mem, cl_mem, const size_t *,
+	const size_t *, const size_t *, size_t, size_t, size_t, size_t, cl_uint,
+	const cl_event *, cl_event *);
+
+cl_int
+clEnqueueReadImage(cl_command_queue, cl_mem, cl_bool, const size_t *,
+	const size_t *, size_t, size_t, void *, cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueWriteImage(cl_command_queue, cl_mem, cl_bool, const size_t *,
+	const size_t *, size_t, size_t, const void *, cl_uint, const cl_event *,
+	cl_event *);
+
+cl_int
+clEnqueueCopyImage(cl_command_queue, cl_mem, cl_mem, const size_t *,
+	const size_t *, const size_t *, cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueCopyImageToBuffer(cl_command_queue, cl_mem, cl_mem, const size_t *,
+	const size_t *, size_t, cl_uint, const cl_event *, cl_event *);
+
+cl_int
+clEnqueueCopyBufferToImage(cl_command_queue, cl_mem, cl_mem, size_t,
+	const size_t *, const size_t *, cl_uint, const cl_event *, cl_event *);
 
 void *
-clEnqueueMapBuffer(cl_command_queue /* command_queue */,
-                   cl_mem           /* buffer */,
-                   cl_bool          /* blocking_map */, 
-                   cl_map_flags     /* map_flags */,
-                   size_t           /* offset */,
-                   size_t           /* cb */,
-                   cl_uint          /* num_events_in_wait_list */,
-                   const cl_event * /* event_wait_list */,
-                   cl_event *       /* event */,
-                   cl_int *         /* errcode_ret */);
+clEnqueueMapBuffer(cl_command_queue, cl_mem, cl_bool, cl_map_flags, size_t,
+	size_t, cl_uint, const cl_event *, cl_event *, cl_int *);
 
 void *
-clEnqueueMapImage(cl_command_queue  /* command_queue */,
-                  cl_mem            /* image */, 
-                  cl_bool           /* blocking_map */, 
-                  cl_map_flags      /* map_flags */, 
-                  const size_t *    /* origin[3] */,
-                  const size_t *    /* region[3] */,
-                  size_t *          /* image_row_pitch */,
-                  size_t *          /* image_slice_pitch */,
-                  cl_uint           /* num_events_in_wait_list */,
-                  const cl_event *  /* event_wait_list */,
-                  cl_event *        /* event */,
-                  cl_int *          /* errcode_ret */);
+clEnqueueMapImage(cl_command_queue, cl_mem, cl_bool, cl_map_flags, const size_t *,
+	const size_t *, size_t *, size_t *, cl_uint, const cl_event *, cl_event *,
+	cl_int *);
 
 cl_int
-clEnqueueUnmapMemObject(cl_command_queue /* command_queue */,
-                        cl_mem           /* memobj */,
-                        void *           /* mapped_ptr */,
-                        cl_uint          /* num_events_in_wait_list */,
-                        const cl_event *  /* event_wait_list */,
-                        cl_event *        /* event */);
+clEnqueueUnmapMemObject(cl_command_queue, cl_mem, void *, cl_uint, const cl_event *,
+	cl_event *);
 
 cl_int
-clEnqueueNDRangeKernel(cl_command_queue /* command_queue */,
-                       cl_kernel        /* kernel */,
-                       cl_uint          /* work_dim */,
-                       const size_t *   /* global_work_offset */,
-                       const size_t *   /* global_work_size */,
-                       const size_t *   /* local_work_size */,
-                       cl_uint          /* num_events_in_wait_list */,
-                       const cl_event * /* event_wait_list */,
-                       cl_event *       /* event */);
+clEnqueueNDRangeKernel(cl_command_queue, cl_kernel, cl_uint, const size_t *,
+	const size_t *, const size_t *, cl_uint, const cl_event *, cl_event *);
 
 cl_int
-clEnqueueTask(cl_command_queue  /* command_queue */,
-              cl_kernel         /* kernel */,
-              cl_uint           /* num_events_in_wait_list */,
-              const cl_event *  /* event_wait_list */,
-              cl_event *        /* event */);
+clEnqueueTask(cl_command_queue, cl_kernel, cl_uint, const cl_event *, cl_event *);
 
 cl_int
-clEnqueueNativeKernel(cl_command_queue  /* command_queue */,
-                      void function(void *) /* user_func */,
-                      void *            /* args */,
-                      size_t            /* cb_args */, 
-                      cl_uint           /* num_mem_objects */,
-                      const cl_mem *    /* mem_list */,
-                      const void **     /* args_mem_loc */,
-                      cl_uint           /* num_events_in_wait_list */,
-                      const cl_event *  /* event_wait_list */,
-                      cl_event *        /* event */);
+clEnqueueNativeKernel(cl_command_queue, void function(void *), void *, size_t,
+	cl_uint, const cl_mem *, const void **, cl_uint, const cl_event *, cl_event *);
 
 cl_int
-clEnqueueMarker(cl_command_queue    /* command_queue */,
-                cl_event *          /* event */);
+clEnqueueMarker(cl_command_queue, cl_event *);
 
 cl_int
-clEnqueueWaitForEvents(cl_command_queue /* command_queue */,
-                       cl_uint          /* num_events */,
-                       const cl_event * /* event_list */);
+clEnqueueWaitForEvents(cl_command_queue, cl_uint, const cl_event *);
 
 cl_int
-clEnqueueBarrier(cl_command_queue /* command_queue */);
+clEnqueueBarrier(cl_command_queue);
 
-/* Extension function access
- *
- * Returns the extension function address for the given function name,
- * or NULL if a valid function can not be found.  The client must
- * check to make sure the address is not NULL, before using or 
- * calling the returned function address.
- */
-void * clGetExtensionFunctionAddress(const char * /* func_name */);
-
+void * clGetExtensionFunctionAddress(const char *);
 
 }
 
