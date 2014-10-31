@@ -421,7 +421,7 @@ const uint CL_PROFILING_COMMAND_SUBMIT = 0x1281;
 const uint CL_PROFILING_COMMAND_START = 0x1282;
 const uint CL_PROFILING_COMMAND_END = 0x1283;
 
-extern (C)
+extern (System)
 {
 
 // Platform API
