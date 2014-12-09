@@ -2,6 +2,7 @@
 	"name": "opencl",
 	"description": "A minimal D application.",
 	"copyright": "Copyright © 2014, yusuke",
+	"license" : "Boost Software License, Version 1.0",
 	"authors": ["Yusuke Suzuki"],
 
 	"dependencies": {
