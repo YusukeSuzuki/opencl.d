@@ -8,7 +8,8 @@
 	"dependencies": {
 	},
 	
-	"libs" : ["OpenCL"],
+	"libs-linux" : ["OpenCL"],
+	"lflags-osx" : ["-framework", "OpenCL"],
 	
 	"configurations" : [
 		{
