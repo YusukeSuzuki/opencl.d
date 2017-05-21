@@ -16,28 +16,28 @@
 			"name" : "debug",
 			"buildType" : "debug",
 			"targetType" : "library",
-			"sourcePaths" : ["source"],
+			"sourcePaths" : ["source"]
 		},
 		{
 			"name" : "release",
 			"buildType" : "release",
 			"targetType" : "library",
-			"sourcePaths" : ["source"],
+			"sourcePaths" : ["source"]
 		},
 		{
 			"name" : "test",
 			"targetType" : "executable",
 			"buildType" : "debug",
 			"sourcePaths" : ["source", "test"],
-			"importPaths" : ["source"],
+			"importPaths" : ["source"]
 		},
 		{
 			"name" : "sample",
 			"targetType" : "executable",
 			"buildType" : "debug",
 			"sourcePaths" : ["source", "sample"],
-			"importPaths" : ["source"],
-		},
+			"importPaths" : ["source"]
+		}
 	],
 
 	"targetPath" : "target"
