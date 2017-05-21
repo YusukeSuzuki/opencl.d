@@ -11,12 +11,12 @@ extern(C) void call_back(const char* e, const void* p, size_t cb, void* u)
 	writefln("%s", e);
 }
 
-void main(string args[])
+void main(string[] args)
 {
 	const size_t VECTOR_SIZE = 64*1024*1024;
 
 	const cl_uint num_entries = 10;
-	cl_platform_id platform_ids[num_entries];
+	cl_platform_id[num_entries] platform_ids;
 	cl_uint num_platforms;
 
 	if(clGetPlatformIDs(
@@ -80,9 +80,9 @@ void main(string args[])
 	float val1 = 1;
 	float val2 = 2;
 
-	cl_event events[3];
+	cl_event[3] events;
 
-	size_t worksize[1] = [VECTOR_SIZE];
+	size_t[1] worksize = [VECTOR_SIZE];
 	size_t* localworksize = null;
 	size_t* offset = null;
 	
